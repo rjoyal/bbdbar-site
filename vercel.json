@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/experiences",
+      "destination": "/services",
+      "permanent": true
+    },
+    {
+      "source": "/quote",
+      "destination": "/inquire",
+      "permanent": true
+    }
+  ]
+}

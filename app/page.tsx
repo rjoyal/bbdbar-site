@@ -1,65 +1,259 @@
 import Image from "next/image";
+import Link from "next/link";
+
+const testimonials = [
+  {
+    quote:
+      "From the moment their charming blue camper arrived, our guests were wowed. Shauna made planning effortless and tailored everything to our event. Blue Bird won't disappoint if you want to delight your guests and elevate any gathering.",
+    author: "Barry",
+    event: "Wedding",
+  },
+  {
+    quote:
+      "Working with Shauna was one of the highlights of our wedding! 7 months later, guests still talk about how delicious the desserts were! Shauna's hand-made quality is impossible to beat.",
+    author: "Theresa & John",
+    event: "Wedding",
+  },
+  {
+    quote:
+      "Shauna was incredible to work with while planning our company's annual summer outing. It was a real treat to have her posh camper, lounge area, and the sundae bar on a hot summer day in Boston.",
+    author: "Nyeka",
+    event: "Corporate Event",
+  },
+];
+
+const services = [
+  {
+    title: "Espresso Bar",
+    description:
+      "Lattes, cappuccinos, cold brew, matcha, and signature custom drinks crafted by our baristas.",
+    icon: "☕",
+  },
+  {
+    title: "Dessert Table",
+    description:
+      "Handmade cookies, brownies, French macarons, and more — every menu custom-built for your event.",
+    icon: "🍰",
+  },
+  {
+    title: "Specialty Bars",
+    description:
+      "Affogato bar, ice cream sundae bar, and cannoli bar — show-stopping additions to any event.",
+    icon: "🍨",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <>
+      {/* Hero */}
+      <section className="relative h-[85vh] min-h-[520px] flex items-center justify-center overflow-hidden">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
+          src="/photos/weddings/07_20_24 Molly and Declans Wedding Teasers-89 - hero.jpeg"
+          alt="Blue Bird camper at a wedding"
+          fill
+          className="object-cover"
           priority
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="relative z-10 text-center text-white px-4 max-w-3xl mx-auto">
+          <p className="text-sm font-semibold uppercase tracking-widest mb-3 text-[#c8dcf6]">
+            Mobile Espresso &amp; Dessert Catering
+          </p>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+            The sweetest addition to your event
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+          <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl mx-auto">
+            Handcrafted espresso drinks and custom desserts — served from our charming vintage camper at weddings, corporate events, and private parties across New England.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              href="/inquire"
+              className="px-7 py-3 rounded-full bg-[#4178ac] text-white font-semibold hover:bg-[#488be2] transition-colors text-base"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Get a Quote
+            </Link>
+            <Link
+              href="/services"
+              className="px-7 py-3 rounded-full bg-white/20 backdrop-blur text-white font-semibold border border-white/40 hover:bg-white/30 transition-colors text-base"
             >
-              Learning
-            </a>{" "}
-            center.
+              See Our Services
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Social proof bar */}
+      <section className="bg-[#4178ac] text-white py-4">
+        <div className="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm font-medium text-center">
+          <span>⭐ 5-Star Google Reviews</span>
+          <span className="hidden sm:block text-[#c8dcf6]">|</span>
+          <span>🏆 2× Best of Zola Winner</span>
+          <span className="hidden sm:block text-[#c8dcf6]">|</span>
+          <span>🎉 100+ Events Served</span>
+          <span className="hidden sm:block text-[#c8dcf6]">|</span>
+          <span>📍 Eastern MA &amp; New England</span>
+        </div>
+      </section>
+
+      {/* What we offer */}
+      <section className="py-20 px-4 max-w-6xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#494a52] mb-3">
+            What we bring to your event
+          </h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            Everything is handmade and custom-designed around your vision, guests, and theme.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((s) => (
+            <div
+              key={s.title}
+              className="rounded-2xl border border-[#c8dcf6] p-8 text-center hover:shadow-lg transition-shadow"
+            >
+              <div className="text-4xl mb-4">{s.icon}</div>
+              <h3 className="text-xl font-bold text-[#4178ac] mb-2">{s.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{s.description}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center mt-10">
+          <Link
+            href="/services"
+            className="inline-block px-6 py-3 rounded-full border-2 border-[#4178ac] text-[#4178ac] font-semibold hover:bg-[#4178ac] hover:text-white transition-colors"
+          >
+            View All Packages
+          </Link>
+        </div>
+      </section>
+
+      {/* Photo split — camper + desserts */}
+      <section className="grid md:grid-cols-2 gap-0">
+        <div className="relative h-80 md:h-96">
+          <Image
+            src="/photos/camper/_K5A8603_hero.jpeg"
+            alt="Blue Bird vintage camper bar setup"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/25 flex items-end p-6">
+            <div>
+              <h3 className="text-white text-2xl font-bold">The Camper</h3>
+              <p className="text-gray-200 text-sm mt-1">
+                A charming Happier Camper HC1 that becomes the centerpiece of your event.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="relative h-80 md:h-96">
+          <Image
+            src="/photos/desserts/Bluebird - 18 of 126_hero.jpg"
+            alt="Custom handmade desserts"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-black/25 flex items-end p-6">
+            <div>
+              <h3 className="text-white text-2xl font-bold">The Desserts</h3>
+              <p className="text-gray-200 text-sm mt-1">
+                Every item is handmade and custom-designed for your event by our pastry chef.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ideal for */}
+      <section className="py-20 px-4 bg-[#f7f9fd]">
+        <div className="max-w-5xl mx-auto text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#494a52] mb-3">
+            Perfect for any celebration
+          </h2>
+          <p className="text-gray-500 max-w-xl mx-auto">
+            From intimate weddings to large corporate gatherings — Blue Bird brings something truly memorable.
+          </p>
+        </div>
+        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+          <Link
+            href="/weddings"
+            className="group relative rounded-2xl overflow-hidden h-64"
           >
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+              src="/photos/camper/Bluebird - 20 of 126 - hero.jpg"
+              alt="Wedding espresso and dessert bar"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-6">
+              <h3 className="text-white text-2xl font-bold">Weddings</h3>
+              <p className="text-gray-200 text-sm mt-1">The sweetest ending to your perfect day →</p>
+            </div>
+          </Link>
+          <Link
+            href="/corporate"
+            className="group relative rounded-2xl overflow-hidden h-64"
           >
-            Documentation
-          </a>
+            <Image
+              src="/photos/corporate/_DSF7621-1.jpeg"
+              alt="Corporate event catering"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+            <div className="absolute bottom-0 left-0 p-6">
+              <h3 className="text-white text-2xl font-bold">Corporate Events</h3>
+              <p className="text-gray-200 text-sm mt-1">Impress your team and clients →</p>
+            </div>
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#494a52] mb-2">
+              What our clients say
+            </h2>
+            <p className="text-gray-500">All 5-star Google reviews</p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-6">
+            {testimonials.map((t) => (
+              <div
+                key={t.author}
+                className="bg-[#f7f9fd] rounded-2xl p-6 border border-[#c8dcf6]"
+              >
+                <div className="text-[#4178ac] text-xl mb-3">★★★★★</div>
+                <p className="text-[#494a52] text-sm leading-relaxed mb-4 italic">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div>
+                  <p className="font-semibold text-sm text-[#494a52]">{t.author}</p>
+                  <p className="text-xs text-gray-400">{t.event}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA strip */}
+      <section className="bg-[#4178ac] py-16 px-4 text-center text-white">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          Ready to add Blue Bird to your event?
+        </h2>
+        <p className="text-[#c8dcf6] mb-8 max-w-md mx-auto">
+          Tell us about your event and we&apos;ll put together a custom proposal — usually within 24 hours.
+        </p>
+        <Link
+          href="/inquire"
+          className="inline-block px-8 py-3 rounded-full bg-white text-[#4178ac] font-bold hover:bg-[#c8dcf6] transition-colors text-base"
+        >
+          Start Your Inquiry
+        </Link>
+      </section>
+    </>
   );
 }
