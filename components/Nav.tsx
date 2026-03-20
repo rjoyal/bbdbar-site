@@ -35,31 +35,19 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-6">
-          {links.map((l) =>
-            l.external ? (
-              <a
-                key={l.href}
-                href={l.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-sm font-medium transition-colors text-[#494a52] hover:text-[#4178ac]"
-              >
-                {l.label}
-              </a>
-            ) : (
-              <Link
-                key={l.href}
-                href={l.href}
-                className={`text-sm font-medium transition-colors ${
-                  pathname === l.href
-                    ? "text-[#4178ac] border-b-2 border-[#4178ac] pb-0.5"
-                    : "text-[#494a52] hover:text-[#4178ac]"
-                }`}
-              >
-                {l.label}
-              </Link>
-            )
-          )}
+          {links.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              className={`text-sm font-medium transition-colors ${
+                pathname === l.href
+                  ? "text-[#4178ac] border-b-2 border-[#4178ac] pb-0.5"
+                  : "text-[#494a52] hover:text-[#4178ac]"
+              }`}
+            >
+              {l.label}
+            </Link>
+          ))}
           <Link
             href="/inquire"
             className="ml-2 px-4 py-2 rounded-full bg-[#4178ac] text-white text-sm font-semibold hover:bg-[#488be2] transition-colors"
@@ -84,33 +72,20 @@ export default function Nav() {
       {open && (
         <div className="md:hidden bg-white border-t border-[#c8dcf6] px-4 pb-4">
           <nav className="flex flex-col gap-3 pt-3">
-            {links.map((l) =>
-              l.external ? (
-                <a
-                  key={l.href}
-                  href={l.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm font-medium text-[#494a52] hover:text-[#4178ac]"
-                  onClick={() => setOpen(false)}
-                >
-                  {l.label}
-                </a>
-              ) : (
-                <Link
-                  key={l.href}
-                  href={l.href}
-                  className={`text-sm font-medium ${
-                    pathname === l.href
-                      ? "text-[#4178ac] font-semibold"
-                      : "text-[#494a52] hover:text-[#4178ac]"
-                  }`}
-                  onClick={() => setOpen(false)}
-                >
-                  {l.label}
-                </Link>
-              )
-            )}
+            {links.map((l) => (
+              <Link
+                key={l.href}
+                href={l.href}
+                className={`text-sm font-medium ${
+                  pathname === l.href
+                    ? "text-[#4178ac] font-semibold"
+                    : "text-[#494a52] hover:text-[#4178ac]"
+                }`}
+                onClick={() => setOpen(false)}
+              >
+                {l.label}
+              </Link>
+            ))}
             <Link
               href="/inquire"
               className="mt-1 px-4 py-2 rounded-full bg-[#4178ac] text-white text-sm font-semibold text-center hover:bg-[#488be2] transition-colors"
