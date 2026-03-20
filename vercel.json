@@ -9,6 +9,11 @@
       "source": "/quote",
       "destination": "/inquire",
       "permanent": true
+    },
+    {
+      "source": "/blog",
+      "destination": "https://bluebirdmobiledessertbar.com/blog",
+      "permanent": true
     }
   ]
 }
