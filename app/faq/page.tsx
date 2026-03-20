@@ -2,9 +2,25 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "FAQ | Blue Bird Mobile Dessert Bar",
+  title: "Frequently Asked Questions | Blue Bird Mobile Dessert Bar",
   description:
     "Common questions about booking Blue Bird Mobile Dessert Bar for weddings and events — pricing, dietary accommodations, venue requirements, travel, and more.",
+  alternates: { canonical: "https://bbdbar.com/faq" },
+  openGraph: {
+    title: "Frequently Asked Questions | Blue Bird Mobile Dessert Bar",
+    description:
+      "Common questions about booking Blue Bird Mobile Dessert Bar for weddings and events — pricing, dietary accommodations, venue requirements, travel, and more.",
+    url: "https://bbdbar.com/faq",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frequently Asked Questions | Blue Bird Mobile Dessert Bar",
+    description:
+      "Common questions about booking Blue Bird Mobile Dessert Bar for weddings and events — pricing, dietary accommodations, venue requirements, travel, and more.",
+  },
 };
 
 const faqs = [

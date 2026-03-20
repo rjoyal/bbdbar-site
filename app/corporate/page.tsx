@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: "Corporate Event Catering | Blue Bird Mobile Dessert Bar",
   description:
     "Elevate your next corporate event with Blue Bird's mobile espresso and dessert bar. A memorable experience for company parties, team outings, client entertainment, and brand activations across Boston and eastern Massachusetts.",
+  alternates: { canonical: "https://bbdbar.com/corporate" },
+  openGraph: {
+    title: "Corporate Event Catering | Blue Bird Mobile Dessert Bar",
+    description:
+      "Elevate your next corporate event with Blue Bird's mobile espresso and dessert bar. A memorable experience for company parties, team outings, client entertainment, and brand activations across Boston and eastern Massachusetts.",
+    url: "https://bbdbar.com/corporate",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Corporate Event Catering | Blue Bird Mobile Dessert Bar",
+    description:
+      "Elevate your next corporate event with Blue Bird's mobile espresso and dessert bar. A memorable experience for company parties, team outings, client entertainment, and brand activations across Boston and eastern Massachusetts.",
+  },
 };
 
 export default function CorporatePage() {

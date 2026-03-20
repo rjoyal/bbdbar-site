@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: "Services & Packages | Blue Bird Mobile Dessert Bar",
   description:
     "Explore Blue Bird's espresso bar, dessert table, and specialty bar packages for weddings and events. Camper packages from $575, cart packages from $450.",
+  alternates: { canonical: "https://bbdbar.com/services" },
+  openGraph: {
+    title: "Services & Packages | Blue Bird Mobile Dessert Bar",
+    description:
+      "Explore Blue Bird's espresso bar, dessert table, and specialty bar packages for weddings and events. Camper packages from $575, cart packages from $450.",
+    url: "https://bbdbar.com/services",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services & Packages | Blue Bird Mobile Dessert Bar",
+    description:
+      "Explore Blue Bird's espresso bar, dessert table, and specialty bar packages for weddings and events. Camper packages from $575, cart packages from $450.",
+  },
 };
 
 const packages = [

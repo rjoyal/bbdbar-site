@@ -3,9 +3,25 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About | Blue Bird Mobile Dessert Bar",
+  title: "About Blue Bird Mobile Dessert Bar | Espresso & Dessert Catering",
   description:
     "Meet Shauna and the Blue Bird story — a mobile espresso and dessert bar serving weddings and events across eastern Massachusetts and New England.",
+  alternates: { canonical: "https://bbdbar.com/about" },
+  openGraph: {
+    title: "About Blue Bird Mobile Dessert Bar",
+    description:
+      "Meet Shauna and the Blue Bird story — a mobile espresso and dessert bar serving weddings and events across eastern Massachusetts and New England.",
+    url: "https://bbdbar.com/about",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Blue Bird Mobile Dessert Bar",
+    description:
+      "Meet Shauna and the Blue Bird story — a mobile espresso and dessert bar serving weddings and events across eastern Massachusetts and New England.",
+  },
 };
 
 export default function AboutPage() {

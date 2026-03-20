@@ -1,5 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+  description:
+    "Blue Bird Mobile Dessert Bar brings handcrafted espresso drinks and custom desserts to weddings, corporate events, and private parties across eastern Massachusetts and New England.",
+  alternates: { canonical: "https://bbdbar.com" },
+  openGraph: {
+    title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+    description:
+      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+    url: "https://bbdbar.com",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+    description:
+      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+  },
+};
 
 const testimonials = [
   {

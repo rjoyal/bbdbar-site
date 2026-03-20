@@ -32,6 +32,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blue Bird Mobile Dessert Bar",
+    description:
+      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+  },
 };
 
 const localBusinessSchema = {

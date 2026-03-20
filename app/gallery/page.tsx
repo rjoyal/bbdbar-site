@@ -3,9 +3,25 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Gallery | Blue Bird Mobile Dessert Bar",
+  title: "Event Photos & Gallery | Blue Bird Mobile Dessert Bar",
   description:
     "Browse photos from Blue Bird Mobile Dessert Bar events — weddings, corporate gatherings, and private parties across eastern Massachusetts and New England.",
+  alternates: { canonical: "https://bbdbar.com/gallery" },
+  openGraph: {
+    title: "Event Photos & Gallery | Blue Bird Mobile Dessert Bar",
+    description:
+      "Browse photos from Blue Bird Mobile Dessert Bar events — weddings, corporate gatherings, and private parties across eastern Massachusetts and New England.",
+    url: "https://bbdbar.com/gallery",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Event Photos & Gallery | Blue Bird Mobile Dessert Bar",
+    description:
+      "Browse photos from Blue Bird Mobile Dessert Bar events — weddings, corporate gatherings, and private parties across eastern Massachusetts and New England.",
+  },
 };
 
 const categories = [

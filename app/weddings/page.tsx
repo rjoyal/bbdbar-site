@@ -6,6 +6,22 @@ export const metadata: Metadata = {
   title: "Wedding Espresso & Dessert Bar | Blue Bird Mobile Dessert Bar",
   description:
     "Make your wedding unforgettable with a custom espresso and dessert bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving eastern Massachusetts and New England.",
+  alternates: { canonical: "https://bbdbar.com/weddings" },
+  openGraph: {
+    title: "Wedding Espresso & Dessert Bar | Blue Bird Mobile Dessert Bar",
+    description:
+      "Make your wedding unforgettable with a custom espresso and dessert bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving eastern Massachusetts and New England.",
+    url: "https://bbdbar.com/weddings",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wedding Espresso & Dessert Bar | Blue Bird Mobile Dessert Bar",
+    description:
+      "Make your wedding unforgettable with a custom espresso and dessert bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving eastern Massachusetts and New England.",
+  },
 };
 
 const testimonials = [

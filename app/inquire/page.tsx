@@ -1,9 +1,25 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Inquire | Blue Bird Mobile Dessert Bar",
+  title: "Request a Quote | Blue Bird Mobile Dessert Bar",
   description:
     "Request a quote for Blue Bird Mobile Dessert Bar at your wedding, corporate event, or private party. Tell us about your event and Shauna will be in touch within 24 hours.",
+  alternates: { canonical: "https://bbdbar.com/inquire" },
+  openGraph: {
+    title: "Request a Quote | Blue Bird Mobile Dessert Bar",
+    description:
+      "Request a quote for Blue Bird Mobile Dessert Bar at your wedding, corporate event, or private party. Tell us about your event and Shauna will be in touch within 24 hours.",
+    url: "https://bbdbar.com/inquire",
+    siteName: "Blue Bird Mobile Dessert Bar",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Request a Quote | Blue Bird Mobile Dessert Bar",
+    description:
+      "Request a quote for Blue Bird Mobile Dessert Bar at your wedding, corporate event, or private party. Tell us about your event and Shauna will be in touch within 24 hours.",
+  },
 };
 
 export default function InquirePage() {
