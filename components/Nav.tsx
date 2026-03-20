@@ -12,7 +12,7 @@ const links = [
   { href: "/gallery", label: "Gallery" },
   { href: "/about", label: "About" },
   { href: "/faq", label: "FAQ" },
-  { href: "https://bbdbar.com/blog", label: "Blog", external: true },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Nav() {
