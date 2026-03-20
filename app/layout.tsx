@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 
 const localBusinessSchema = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "CateringService",
   name: "Blue Bird Mobile Dessert Bar",
   url: "https://bbdbar.com",
   logo: "https://bbdbar.com/logos/bluebird-logo.png",
@@ -64,6 +64,14 @@ const localBusinessSchema = {
   ],
   servesCuisine: ["Espresso", "Desserts", "Pastries"],
   priceRange: "$$",
+  telephone: "+19782169367",
+  email: "shauna@bluebirdmobilebaking.com",
+  sameAs: [
+    "https://www.instagram.com/bluebirdmobiledessertbar/",
+    "https://www.pinterest.com/bluebirdmobiledessertbar/",
+    "https://www.linkedin.com/in/shauna-hinchen-joyal-32211032/",
+    "https://www.facebook.com/Bluebirdmobiledessertbar",
+  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
