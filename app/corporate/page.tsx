@@ -33,6 +33,7 @@ export default function CorporatePage() {
           src="/photos/corporate/_DSF7621-1.jpeg"
           alt="Blue Bird at a corporate event"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -97,7 +98,7 @@ export default function CorporatePage() {
             "/photos/camper/_K5A8603_hero.jpeg",
           ].map((src, i) => (
             <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
-              <Image src={src} alt="Blue Bird corporate event" fill className="object-cover hover:scale-105 transition-transform duration-300" />
+              <Image src={src} alt="Blue Bird corporate event" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-300" />
             </div>
           ))}
         </div>

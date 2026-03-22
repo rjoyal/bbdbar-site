@@ -130,7 +130,7 @@ export default function ServicesPage() {
           {packages.map((pkg) => (
             <div key={pkg.name} className="rounded-2xl overflow-hidden border border-[#c8dcf6] hover:shadow-lg transition-shadow">
               <div className="relative h-56">
-                <Image src={pkg.image} alt={pkg.name} fill className="object-cover" />
+                <Image src={pkg.image} alt={pkg.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
               </div>
               <div className="p-6">
                 <div className="flex items-start justify-between mb-2">

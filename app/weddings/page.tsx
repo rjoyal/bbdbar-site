@@ -51,6 +51,7 @@ export default function WeddingsPage() {
           src="/photos/weddings/07_20_24 Molly and Declans Wedding Teasers-89 - hero.jpeg"
           alt="Blue Bird at a wedding"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -165,7 +166,7 @@ export default function WeddingsPage() {
             "/photos/desserts/IMG_6489_hero.jpeg",
           ].map((src, i) => (
             <div key={i} className="relative aspect-square rounded-xl overflow-hidden">
-              <Image src={src} alt="Blue Bird wedding event" fill className="object-cover hover:scale-105 transition-transform duration-300" />
+              <Image src={src} alt="Blue Bird wedding event" fill sizes="(max-width: 768px) 50vw, 33vw" className="object-cover hover:scale-105 transition-transform duration-300" />
             </div>
           ))}
         </div>

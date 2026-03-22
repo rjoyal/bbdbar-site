@@ -53,6 +53,7 @@ export default function AboutPage() {
             src="/photos/shauna/Shauna break - hero.jpeg"
             alt="Shauna at the Blue Bird camper"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>
@@ -114,6 +115,7 @@ export default function AboutPage() {
             src="/photos/camper/_K5A8603_hero.jpeg"
             alt="The Blue Bird Happier Camper"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
         </div>

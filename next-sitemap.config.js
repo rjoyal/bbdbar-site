@@ -2,7 +2,7 @@
 module.exports = {
   siteUrl: "https://bbdbar.com",
   generateRobotsTxt: true,
-  outDir: "./out",
+  outDir: "./public",
   robotsTxtOptions: {
     policies: [{ userAgent: "*", allow: "/" }],
   },

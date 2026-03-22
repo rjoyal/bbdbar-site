@@ -75,6 +75,7 @@ export default function Home() {
           src="/photos/weddings/07_20_24 Molly and Declans Wedding Teasers-89 - hero.jpeg"
           alt="Blue Bird camper at a wedding"
           fill
+          sizes="100vw"
           className="object-cover"
           priority
         />
@@ -158,6 +159,7 @@ export default function Home() {
             src="/photos/camper/_K5A8603_hero.jpeg"
             alt="Blue Bird vintage camper bar setup"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/25 flex items-end p-6">
@@ -174,6 +176,7 @@ export default function Home() {
             src="/photos/desserts/Bluebird - 18 of 126_hero.jpg"
             alt="Custom handmade desserts"
             fill
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
           />
           <div className="absolute inset-0 bg-black/25 flex items-end p-6">
@@ -206,6 +209,7 @@ export default function Home() {
               src="/photos/camper/Bluebird - 20 of 126 - hero.jpg"
               alt="Wedding espresso and dessert bar"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
@@ -222,6 +226,7 @@ export default function Home() {
               src="/photos/corporate/_DSF7621-1.jpeg"
               alt="Corporate event catering"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
