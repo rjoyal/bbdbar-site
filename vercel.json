@@ -2,9 +2,8 @@
   "redirects": [
     {
       "source": "/recipes/:path*",
-      "has": [{ "type": "host", "value": "bluebirdmobiledessertbar.com" }],
-      "destination": "https://bbdbar.com/blog/:path*",
-      "statusCode": 301
+      "destination": "/blog/:path*",
+      "permanent": true
     },
     {
       "source": "/(.*)",
