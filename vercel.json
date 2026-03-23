@@ -1,6 +1,12 @@
 {
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "bluebirdmobiledessertbar.com" }],
+      "destination": "https://bbdbar.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/experiences",
       "destination": "/services",
       "permanent": true
@@ -8,11 +14,6 @@
     {
       "source": "/quote",
       "destination": "/inquire",
-      "permanent": true
-    },
-    {
-      "source": "/blog",
-      "destination": "https://bluebirdmobiledessertbar.com/blog",
       "permanent": true
     }
   ]
