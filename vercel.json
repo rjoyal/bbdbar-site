@@ -25,6 +25,11 @@
       "source": "/contact",
       "destination": "/inquire",
       "permanent": true
+    },
+    {
+      "source": "/contact-gad",
+      "destination": "/inquire",
+      "permanent": true
     }
   ]
 }
