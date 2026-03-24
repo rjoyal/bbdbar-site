@@ -30,6 +30,11 @@
       "source": "/contact-gad",
       "destination": "/inquire",
       "permanent": true
+    },
+    {
+      "source": "/eb",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
