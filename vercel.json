@@ -20,6 +20,11 @@
       "source": "/quote",
       "destination": "/inquire",
       "permanent": true
+    },
+    {
+      "source": "/contact",
+      "destination": "/inquire",
+      "permanent": true
     }
   ]
 }
