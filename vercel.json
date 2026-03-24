@@ -40,6 +40,11 @@
       "source": "/en-us/contact-us",
       "destination": "/inquire",
       "permanent": true
+    },
+    {
+      "source": "/en-us",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
