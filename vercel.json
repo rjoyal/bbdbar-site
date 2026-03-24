@@ -35,6 +35,11 @@
       "source": "/eb",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/en-us/contact-us",
+      "destination": "/inquire",
+      "permanent": true
     }
   ]
 }
