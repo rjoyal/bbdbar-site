@@ -45,6 +45,16 @@
       "source": "/en-us",
       "destination": "/",
       "permanent": true
+    },
+    {
+      "source": "/home",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en-us/book",
+      "destination": "/inquire",
+      "permanent": true
     }
   ]
 }
