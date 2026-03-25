@@ -50,19 +50,22 @@ const services = [
     title: "Espresso Bar",
     description:
       "Lattes, cappuccinos, cold brew, matcha, and signature custom drinks crafted by our baristas.",
-    icon: "☕",
+    illustration: "/illustrations/latteelement.png",
+    alt: "Illustrated latte",
   },
   {
     title: "Dessert Table",
     description:
       "Handmade cookies, brownies, French macarons, and more — every menu custom-built for your event.",
-    icon: "🍰",
+    illustration: "/illustrations/chocolatecookielement.png",
+    alt: "Illustrated chocolate cookie",
   },
   {
     title: "Specialty Bars",
     description:
       "Affogato bar, ice cream sundae bar, and cannoli bar — show-stopping additions to any event.",
-    icon: "🍨",
+    illustration: "/illustrations/affogattoelement.png",
+    alt: "Illustrated affogato",
   },
 ];
 
@@ -136,7 +139,9 @@ export default function Home() {
               key={s.title}
               className="rounded-2xl border border-[#c8dcf6] p-8 text-center hover:shadow-lg transition-shadow"
             >
-              <div className="text-4xl mb-4">{s.icon}</div>
+              <div className="relative w-24 h-24 mx-auto mb-4">
+                <Image src={s.illustration} alt={s.alt} fill className="object-contain" />
+              </div>
               <h3 className="text-xl font-bold text-[#4178ac] mb-2">{s.title}</h3>
               <p className="text-gray-500 text-sm leading-relaxed">{s.description}</p>
             </div>
