@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
@@ -45,11 +46,22 @@ const testimonials = [
   },
 ];
 
-const services = [
+const services: { title: string; description: ReactNode; illustration: string; alt: string }[] = [
   {
     title: "Espresso Bar",
-    description:
-      "Lattes, cappuccinos, cold brew, matcha, and signature custom drinks crafted by our baristas.",
+    description: (
+      <>
+        Lattes, cappuccinos, and cold brew using locally-roasted{" "}
+        <a href="https://atomicroastery.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#4178ac]">
+          Atomic Coffee
+        </a>
+        . Matcha and teas from{" "}
+        <a href="https://memteaimports.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-[#4178ac]">
+          MEM Tea
+        </a>
+        . Signature drinks crafted by our baristas.
+      </>
+    ),
     illustration: "/illustrations/latteelement.png",
     alt: "Illustrated latte",
   },
