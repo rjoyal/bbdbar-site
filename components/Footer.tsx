@@ -45,8 +45,11 @@ export default function Footer() {
           <h3 className="text-sm font-semibold uppercase tracking-wider mb-3 text-[#c8dcf6]">
             Get in Touch
           </h3>
-          <p className="text-sm text-gray-300 mb-3">
+          <p className="text-sm text-gray-300 mb-1">
             Based in Hamilton, MA — serving eastern Massachusetts, Boston metro, and all of New England.
+          </p>
+          <p className="text-sm text-gray-300 mb-3">
+            <a href="tel:+19782169367" className="hover:text-white transition-colors">(978) 216-9367</a>
           </p>
           <div className="flex gap-4 mb-4">
             {[
