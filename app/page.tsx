@@ -4,14 +4,14 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+  title: "Blue Bird Mobile Dessert Bar | Coffee Cart & Espresso Bar · Boston & Eastern MA",
   description:
-    "Blue Bird Mobile Dessert Bar brings handcrafted espresso drinks and custom desserts to weddings, corporate events, and private parties across eastern Massachusetts and New England.",
+    "Blue Bird is a mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings, corporate events, and private parties across Boston and eastern Massachusetts.",
   alternates: { canonical: "https://bbdbar.com" },
   openGraph: {
-    title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+    title: "Blue Bird Mobile Dessert Bar | Coffee Cart & Espresso Bar · Boston & Eastern MA",
     description:
-      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+      "Mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings and events across Boston and eastern Massachusetts.",
     url: "https://bbdbar.com",
     siteName: "Blue Bird Mobile Dessert Bar",
     locale: "en_US",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+    title: "Blue Bird Mobile Dessert Bar | Coffee Cart & Espresso Bar · Boston & Eastern MA",
     description:
-      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+      "Mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings and events across Boston and eastern Massachusetts.",
   },
 };
 
@@ -97,7 +97,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 text-center text-white px-4 max-w-3xl mx-auto">
           <p className="text-sm font-semibold uppercase tracking-widest mb-3 text-[#c8dcf6]">
-            Mobile Espresso &amp; Dessert Catering
+            Mobile Dessert &amp; Espresso Bar · Boston &amp; Eastern MA
           </p>
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
             The sweetest addition to your event
@@ -131,7 +131,7 @@ export default function Home() {
           <span className="hidden sm:block text-[#c8dcf6]">|</span>
           <span>🎉 100+ Events Served</span>
           <span className="hidden sm:block text-[#c8dcf6]">|</span>
-          <span>📍 Eastern MA &amp; New England</span>
+          <span>📍 Boston &amp; Eastern Massachusetts</span>
         </div>
       </section>
 
@@ -200,7 +200,7 @@ export default function Home() {
             <div>
               <h3 className="text-white text-2xl font-bold">The Desserts</h3>
               <p className="text-gray-200 text-sm mt-1">
-                Every item is handmade and custom-designed for your event by our pastry chef.
+                Every item is crafted and customized for your event by our pastry chef.
               </p>
             </div>
           </div>
@@ -280,6 +280,32 @@ export default function Home() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Service area */}
+      <section className="py-16 px-4 bg-[#f7f9fd]">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#494a52] mb-3">
+            Bringing the coffee cart to you
+          </h2>
+          <p className="text-gray-500 mb-8 max-w-2xl mx-auto">
+            Our mobile espresso bar and coffee cart serve events across greater Boston and eastern Massachusetts, with regular travel throughout New England.
+          </p>
+          <div className="grid sm:grid-cols-3 gap-4 text-sm text-[#494a52]">
+            <div className="bg-white rounded-xl p-4 border border-[#c8dcf6]">
+              <p className="font-semibold text-[#4178ac] mb-2">Boston Metro</p>
+              <p className="text-gray-500 leading-relaxed">Boston · Cambridge · Somerville · Newton · Brookline · Quincy · Medford</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 border border-[#c8dcf6]">
+              <p className="font-semibold text-[#4178ac] mb-2">North Shore & Beyond</p>
+              <p className="text-gray-500 leading-relaxed">Salem · Beverly · Gloucester · Newburyport · Hamilton · Ipswich · Manchester · Rockport</p>
+            </div>
+            <div className="bg-white rounded-xl p-4 border border-[#c8dcf6]">
+              <p className="font-semibold text-[#4178ac] mb-2">South Shore & New England</p>
+              <p className="text-gray-500 leading-relaxed">Plymouth · Cape Cod · MetroWest · NH · Maine · RI · CT</p>
+            </div>
           </div>
         </div>
       </section>

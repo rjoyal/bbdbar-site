@@ -3,14 +3,14 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services & Packages | Blue Bird Mobile Dessert Bar",
+  title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar · Boston, MA",
   description:
-    "Explore Blue Bird's espresso bar, dessert table, and specialty bar packages for weddings and events. Camper packages from $575, cart packages from $450.",
+    "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Blue Bird offers camper and cart packages with handcrafted drinks and custom desserts. Camper packages from $575, cart packages from $450.",
   alternates: { canonical: "https://bbdbar.com/services" },
   openGraph: {
-    title: "Services & Packages | Blue Bird Mobile Dessert Bar",
+    title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar",
     description:
-      "Explore Blue Bird's espresso bar, dessert table, and specialty bar packages for weddings and events. Camper packages from $575, cart packages from $450.",
+      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $575, cart packages from $450.",
     url: "https://bbdbar.com/services",
     siteName: "Blue Bird Mobile Dessert Bar",
     locale: "en_US",
@@ -18,15 +18,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Services & Packages | Blue Bird Mobile Dessert Bar",
+    title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar",
     description:
-      "Explore Blue Bird's espresso bar, dessert table, and specialty bar packages for weddings and events. Camper packages from $575, cart packages from $450.",
+      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $575, cart packages from $450.",
   },
 };
 
 const packages = [
   {
     name: "The Camper",
+    tag: "Vintage Camper Bar",
     price: "Starting at $575",
     image: "/photos/camper/_K5A8603_hero.jpeg",
     description:
@@ -41,10 +42,11 @@ const packages = [
   },
   {
     name: "The Perch Cart",
+    tag: "Mobile Coffee Cart",
     price: "Starting at $450",
     image: "/photos/cart/_K5A8885_hero.jpg",
     description:
-      "A more compact option — perfect for indoor venues or tighter spaces. All the same handcrafted quality in a smaller footprint.",
+      "A compact, elegant coffee cart — perfect for indoor venues or tighter spaces. All the same handcrafted espresso quality in a smaller footprint.",
     includes: [
       "Transportation to/from your venue",
       "Full setup and breakdown",
@@ -114,12 +116,12 @@ export default function ServicesPage() {
     <>
       {/* Header */}
       <section className="bg-[#f7f9fd] py-16 px-4 text-center">
-        <p className="text-sm font-semibold uppercase tracking-widest text-[#4178ac] mb-2">Services & Packages</p>
+        <p className="text-sm font-semibold uppercase tracking-widest text-[#4178ac] mb-2">Coffee Cart & Espresso Bar · Boston & Eastern MA</p>
         <h1 className="text-4xl md:text-5xl font-bold text-[#494a52] mb-4">
           Everything is custom-built for your event
         </h1>
         <p className="text-gray-500 max-w-xl mx-auto">
-          Choose your base package, then work with Shauna to design your perfect menu — espresso drinks, desserts, specialty bars, and more.
+          Choose your base package — our signature camper or compact coffee cart — then work with Shauna to design your perfect menu of espresso drinks, desserts, specialty bars, and more.
         </p>
       </section>
 
@@ -133,10 +135,11 @@ export default function ServicesPage() {
                 <Image src={pkg.image} alt={pkg.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
               </div>
               <div className="p-6">
-                <div className="flex items-start justify-between mb-2">
+                <div className="flex items-start justify-between mb-1">
                   <h3 className="text-xl font-bold text-[#494a52]">{pkg.name}</h3>
                   <span className="text-[#4178ac] font-semibold text-sm whitespace-nowrap ml-3">{pkg.price}</span>
                 </div>
+                <p className="text-xs font-semibold uppercase tracking-wider text-[#4178ac] mb-3">{pkg.tag}</p>
                 <p className="text-sm text-gray-500 leading-relaxed mb-4">{pkg.description}</p>
                 <ul className="space-y-1">
                   {pkg.includes.map((item) => (

@@ -13,21 +13,25 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Blue Bird Mobile Dessert Bar | Espresso & Desserts for Events",
+  title: "Blue Bird Mobile Dessert Bar | Coffee Cart & Espresso Bar · Boston & Eastern MA",
   description:
-    "Blue Bird Mobile Dessert Bar brings handcrafted espresso drinks and custom desserts to weddings, corporate events, and private parties across eastern Massachusetts and New England.",
+    "Blue Bird is a mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings, corporate events, and private parties across Boston and eastern Massachusetts.",
   keywords: [
-    "mobile dessert bar",
-    "espresso bar catering",
+    "coffee cart Boston",
+    "mobile coffee cart Massachusetts",
+    "espresso bar catering Boston",
+    "wedding coffee cart",
+    "coffee cart rental Massachusetts",
+    "mobile espresso bar Boston",
     "wedding dessert bar",
-    "corporate catering",
-    "Boston mobile bar",
-    "Massachusetts dessert catering",
+    "corporate coffee catering Boston",
+    "mobile dessert bar eastern Massachusetts",
+    "coffee cart North Shore MA",
   ],
   openGraph: {
-    title: "Blue Bird Mobile Dessert Bar",
+    title: "Blue Bird Mobile Dessert Bar | Coffee Cart & Espresso Bar · Boston & Eastern MA",
     description:
-      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+      "Mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings and events across Boston and eastern Massachusetts.",
     url: "https://bbdbar.com",
     siteName: "Blue Bird Mobile Dessert Bar",
     locale: "en_US",
@@ -35,9 +39,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blue Bird Mobile Dessert Bar",
+    title: "Blue Bird Mobile Dessert Bar | Coffee Cart & Espresso Bar · Boston & Eastern MA",
     description:
-      "Handcrafted espresso & custom desserts for weddings and events across eastern Massachusetts.",
+      "Mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings and events across Boston and eastern Massachusetts.",
   },
 };
 
@@ -48,7 +52,7 @@ const localBusinessSchema = {
   url: "https://bbdbar.com",
   logo: "https://bbdbar.com/logos/bluebird-logo.png",
   description:
-    "Blue Bird Mobile Dessert Bar brings handcrafted espresso drinks and custom desserts to weddings, corporate events, and private parties across eastern Massachusetts and New England.",
+    "Blue Bird is a mobile coffee cart and espresso bar serving handcrafted drinks and custom desserts at weddings, corporate events, and private parties across Boston and eastern Massachusetts.",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Hamilton",
@@ -56,14 +60,29 @@ const localBusinessSchema = {
     addressCountry: "US",
   },
   areaServed: [
+    "Boston, MA",
+    "Cambridge, MA",
+    "Somerville, MA",
+    "Newton, MA",
+    "Brookline, MA",
+    "Salem, MA",
+    "Beverly, MA",
+    "Gloucester, MA",
+    "Newburyport, MA",
+    "Hamilton, MA",
+    "Ipswich, MA",
+    "Manchester-by-the-Sea, MA",
+    "Plymouth, MA",
     "Eastern Massachusetts",
-    "Boston metropolitan area",
+    "North Shore Massachusetts",
+    "South Shore Massachusetts",
+    "Cape Cod, MA",
     "Maine",
     "New Hampshire",
     "Connecticut",
     "Rhode Island",
   ],
-  servesCuisine: ["Espresso", "Desserts", "Pastries"],
+  servesCuisine: ["Espresso", "Coffee", "Desserts", "Pastries"],
   priceRange: "$$",
   telephone: "+19782169367",
   email: "shauna@bluebirdmobilebaking.com",

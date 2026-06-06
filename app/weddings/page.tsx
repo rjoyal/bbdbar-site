@@ -3,14 +3,14 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wedding Espresso & Dessert Bar | Blue Bird Mobile Dessert Bar",
+  title: "Wedding Coffee Cart & Espresso Bar | Blue Bird · Boston & Eastern MA",
   description:
-    "Make your wedding unforgettable with a custom espresso and dessert bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving eastern Massachusetts and New England.",
+    "Make your wedding unforgettable with a mobile coffee cart and espresso bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving Boston and eastern Massachusetts.",
   alternates: { canonical: "https://bbdbar.com/weddings" },
   openGraph: {
-    title: "Wedding Espresso & Dessert Bar | Blue Bird Mobile Dessert Bar",
+    title: "Wedding Coffee Cart & Espresso Bar | Blue Bird · Boston & Eastern MA",
     description:
-      "Make your wedding unforgettable with a custom espresso and dessert bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving eastern Massachusetts and New England.",
+      "Make your wedding unforgettable with a mobile coffee cart and espresso bar from Blue Bird. Serving Boston and eastern Massachusetts.",
     url: "https://bbdbar.com/weddings",
     siteName: "Blue Bird Mobile Dessert Bar",
     locale: "en_US",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Wedding Espresso & Dessert Bar | Blue Bird Mobile Dessert Bar",
+    title: "Wedding Coffee Cart & Espresso Bar | Blue Bird · Boston & Eastern MA",
     description:
-      "Make your wedding unforgettable with a custom espresso and dessert bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving eastern Massachusetts and New England.",
+      "Make your wedding unforgettable with a mobile coffee cart and espresso bar from Blue Bird. Serving Boston and eastern Massachusetts.",
   },
 };
 
