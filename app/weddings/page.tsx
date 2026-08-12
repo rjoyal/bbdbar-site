@@ -119,7 +119,7 @@ export default function WeddingsPage() {
               Popular add-ons
             </h2>
             <p className="text-gray-400 text-sm text-center mb-6">Build your perfect experience — Shauna will help you choose.</p>
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
               {[
                 {
                   title: "Espresso bar service",
@@ -128,6 +128,10 @@ export default function WeddingsPage() {
                 {
                   title: "Handmade dessert table",
                   body: "Custom pastry menu designed with you — French macarons, cookies, brownies, elegant pastries, and more. Every item made from scratch.",
+                },
+                {
+                  title: "Affogato & gelato bars",
+                  body: "Espresso poured over our own house-made gelato, plus a full gelato bar with a variety of flavors and seasonal specials.",
                 },
                 {
                   title: "Custom signage & décor",

@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What dessert and espresso options do you offer?",
-    a: "We offer a full espresso bar with lattes, cappuccinos, cold brew, matcha, herbal teas, and artisan sodas — plus affogato bars, ice cream sundae bars, and cannoli bars. For desserts, every menu is custom and handmade: cookies, brownies, French macarons, madeleines, cupcakes, babka, Kouign Amann, and more. The final menu is always curated together with you.",
+    a: "We offer a full espresso bar with lattes, cappuccinos, cold brew, matcha, herbal teas, and artisan sodas — plus affogato bars, gelato bars, and cannoli bars. For desserts, every menu is custom and handmade: cookies, brownies, French macarons, madeleines, cupcakes, babka, Kouign Amann, and more. The final menu is always curated together with you.",
   },
   {
     q: "Can you accommodate dietary restrictions?",

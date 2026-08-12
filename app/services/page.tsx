@@ -65,12 +65,12 @@ const addOns = [
   {
     name: "Affogato Bar",
     description:
-      "A crowd-pleasing showpiece: espresso poured over premium ice cream. Perfect as a late-night reception treat.",
+      "Espresso poured over our own house-made gelato. Perfect as a late-night reception treat.",
   },
   {
-    name: "Ice Cream Sundae Bar",
+    name: "Gelato Bar",
     description:
-      "Scoops, toppings, and all the fixings. A hit at summer outdoor events and corporate gatherings.",
+      "Our own house-made gelato in a variety of flavors and seasonal specials.",
   },
   {
     name: "Cannoli Bar",

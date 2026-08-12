@@ -75,7 +75,7 @@ const services: { title: string; description: ReactNode; illustration: string; a
   {
     title: "Specialty Bars",
     description:
-      "Affogato bar, ice cream sundae bar, and cannoli bar — show-stopping additions to any event.",
+      "Affogato bar, gelato bar, and cannoli bar — show-stopping additions to any event.",
     illustration: "/illustrations/affogattoelement.png",
     alt: "Illustrated affogato",
   },
