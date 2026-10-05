@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Wedding Coffee Cart & Espresso Bar | Blue Bird · Boston & Eastern MA",
   description:
-    "Make your wedding unforgettable with a mobile coffee cart and espresso bar from Blue Bird. Handmade pastries, signature drinks, and a charming vintage camper — serving Boston and eastern Massachusetts.",
+    "Make your wedding unforgettable with a mobile coffee cart and espresso bar from Blue Bird. Handmade pastries, signature drinks, and a charming retro camper — serving Boston and eastern Massachusetts.",
   alternates: { canonical: "https://bbdbar.com/weddings" },
   openGraph: {
     title: "Wedding Coffee Cart & Espresso Bar | Blue Bird · Boston & Eastern MA",

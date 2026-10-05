@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const packages = [
   {
     name: "The Camper",
-    tag: "Vintage Camper Bar",
+    tag: "Retro Camper Bar",
     price: "Starting at $575",
     image: "/photos/camper/_K5A8603_hero.jpeg",
     description:

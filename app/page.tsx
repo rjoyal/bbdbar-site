@@ -103,7 +103,7 @@ export default function Home() {
             The sweetest addition to your event
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-8 max-w-xl mx-auto">
-            Handcrafted espresso drinks and custom desserts — served from our charming vintage camper at weddings, corporate events, and private parties across New England.
+            Handcrafted espresso drinks and custom desserts — served from our charming retro camper at weddings, corporate events, and private parties across New England.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
@@ -174,7 +174,7 @@ export default function Home() {
         <div className="relative h-80 md:h-96">
           <Image
             src="/photos/camper/_K5A8603_hero.jpeg"
-            alt="Blue Bird vintage camper bar setup"
+            alt="Blue Bird retro camper bar setup"
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
