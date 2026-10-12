@@ -106,7 +106,7 @@ export default function AboutPage() {
               The camper is more than a serving station — it&apos;s an experience. Guests are drawn to it the moment it arrives. It creates a natural gathering point, a stunning photo backdrop, and an instant conversation starter. Lounge furniture comes with the setup.
             </p>
             <p>
-              We handle all setup (1 hour) and breakdown (30 minutes) — you just enjoy your event. Need a smaller footprint? Our &ldquo;Perch&rdquo; cart delivers the same handcrafted quality for tighter indoor venues.
+              We handle all setup (1 hour) and breakdown (30 minutes) — you just enjoy your event. Need a smaller footprint? Our &ldquo;Perch&rdquo; cart delivers the same handcrafted quality for tighter indoor venues, and &ldquo;Lil Perch&rdquo; is our most compact option, perfect for a cannoli bar, cold brew bar, or dessert table.
             </p>
           </div>
         </div>
