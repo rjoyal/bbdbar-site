@@ -1,10 +1,17 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import yaml from "js-yaml";
 import { remark } from "remark";
 import html from "remark-html";
 
 const postsDirectory = path.join(process.cwd(), "content/blog");
+
+// gray-matter's built-in YAML engine calls js-yaml 3's safeLoad, which js-yaml 4
+// removed; js-yaml is overridden to v4 in package.json, so supply the parser here.
+const matterOptions = {
+  engines: { yaml: (s: string) => yaml.load(s) as object },
+};
 
 export interface Post {
   slug: string;
@@ -22,7 +29,7 @@ export function getAllPosts(): Post[] {
       const slug = fileName.replace(/\.md$/, "");
       const fullPath = path.join(postsDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
-      const { data } = matter(fileContents);
+      const { data } = matter(fileContents, matterOptions);
       return {
         slug,
         title: data.title as string,
@@ -36,7 +43,7 @@ export function getAllPosts(): Post[] {
 export async function getPostBySlug(slug: string): Promise<Post> {
   const fullPath = path.join(postsDirectory, `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
+  const { data, content } = matter(fileContents, matterOptions);
   const processedContent = await remark()
     .use(html, { sanitize: false })
     .process(content);
