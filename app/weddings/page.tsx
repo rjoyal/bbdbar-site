@@ -82,7 +82,7 @@ export default function WeddingsPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-[#494a52] mb-1 text-center">
               Every package includes
             </h2>
-            <p className="text-gray-400 text-sm text-center mb-6">Camper packages from $650 · Cart packages from $450</p>
+            <p className="text-gray-400 text-sm text-center mb-6">Camper packages from $650 · Cart packages from $550</p>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 {
