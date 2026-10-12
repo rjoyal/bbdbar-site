@@ -41,12 +41,27 @@ const packages = [
     ],
   },
   {
-    name: "The Perch Cart",
+    name: "The Perch",
     tag: "Mobile Coffee Cart",
     price: "Starting at $550",
     image: "/photos/cart/_K5A8885_hero.jpg",
     description:
       "A compact, elegant coffee cart — perfect for indoor venues or tighter spaces. All the same handcrafted espresso quality in a smaller footprint.",
+    includes: [
+      "Transportation to/from your venue",
+      "Full setup and breakdown",
+      "Insurance coverage",
+      "Service staff",
+    ],
+  },
+  {
+    name: "Lil Perch",
+    tag: "Cold Brew Cart & Dessert Buffet",
+    price: "Starting at $425",
+    image: "/photos/cart/lil-perch.jpeg",
+    imagePosition: "center 40%",
+    description:
+      "Even more compact, but just as elegant as the Perch. Lil Perch is made for a cannoli bar, cold brew bar, or dessert table — a charming touch that fits almost anywhere.",
     includes: [
       "Transportation to/from your venue",
       "Full setup and breakdown",
@@ -121,18 +136,18 @@ export default function ServicesPage() {
           Everything is custom-built for your event
         </h1>
         <p className="text-gray-500 max-w-xl mx-auto">
-          Choose your base package — our signature camper or compact coffee cart — then work with Shauna to design your perfect menu of espresso drinks, desserts, specialty bars, and more.
+          Choose your base package — our signature camper, compact coffee cart, or Lil Perch dessert cart — then work with Shauna to design your perfect menu of espresso drinks, desserts, specialty bars, and more.
         </p>
       </section>
 
       {/* Packages */}
       <section className="py-16 px-4 max-w-5xl mx-auto">
         <h2 className="text-2xl md:text-3xl font-bold text-[#494a52] mb-8 text-center">Base packages</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {packages.map((pkg) => (
             <div key={pkg.name} className="rounded-2xl overflow-hidden border border-[#c8dcf6] hover:shadow-lg transition-shadow">
               <div className="relative h-56">
-                <Image src={pkg.image} alt={pkg.name} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+                <Image src={pkg.image} alt={pkg.name} fill loading="eager" sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw" className="object-cover" style={{ objectPosition: pkg.imagePosition }} />
               </div>
               <div className="p-6">
                 <div className="flex items-start justify-between mb-1">
