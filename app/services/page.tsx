@@ -5,12 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar · Boston, MA",
   description:
-    "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Blue Bird offers camper and cart packages with handcrafted drinks and custom desserts. Camper packages from $575, cart packages from $450.",
+    "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Blue Bird offers camper and cart packages with handcrafted drinks and custom desserts. Camper packages from $650, cart packages from $550.",
   alternates: { canonical: "https://bbdbar.com/services" },
   openGraph: {
     title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar",
     description:
-      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $575, cart packages from $450.",
+      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $650, cart packages from $550.",
     url: "https://bbdbar.com/services",
     siteName: "Blue Bird Mobile Dessert Bar",
     locale: "en_US",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar",
     description:
-      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $575, cart packages from $450.",
+      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $650, cart packages from $550.",
   },
 };
 
@@ -28,7 +28,7 @@ const packages = [
   {
     name: "The Camper",
     tag: "Retro Camper Bar",
-    price: "Starting at $575",
+    price: "Starting at $650",
     image: "/photos/camper/_K5A8603_hero.jpeg",
     description:
       "Our signature Happier Camper HC1 trailer — a charming, photo-worthy centerpiece for your event. Includes lounge furniture setup alongside the camper.",
@@ -43,7 +43,7 @@ const packages = [
   {
     name: "The Perch Cart",
     tag: "Mobile Coffee Cart",
-    price: "Starting at $450",
+    price: "Starting at $550",
     image: "/photos/cart/_K5A8885_hero.jpg",
     description:
       "A compact, elegant coffee cart — perfect for indoor venues or tighter spaces. All the same handcrafted espresso quality in a smaller footprint.",

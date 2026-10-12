@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "What are your prices?",
-    a: "Blue Bird camper packages start at $575. Perch cart packages start at $450. Both include transportation, full setup and breakdown, insurance, and service staff. Camper packages also include lounge furniture. Dessert and espresso service are built on top of the base package — Shauna will help you customize. A $300 deposit secures your date.",
+    a: "Blue Bird camper packages start at $650. Perch cart packages start at $550. Both include transportation, full setup and breakdown, insurance, and service staff. Camper packages also include lounge furniture. Dessert and espresso service are built on top of the base package — Shauna will help you customize. A $300 deposit secures your date.",
   },
   {
     q: "How far in advance do I need to book?",
