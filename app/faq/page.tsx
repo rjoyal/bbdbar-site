@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "What are your prices?",
-    a: "Blue Bird camper packages start at $650. Perch cart packages start at $550. Both include transportation, full setup and breakdown, insurance, and service staff. Camper packages also include lounge furniture. Dessert and espresso service are built on top of the base package — Shauna will help you customize. A $300 deposit secures your date.",
+    a: "Blue Bird camper packages start at $650. Perch cart packages start at $550, and Lil Perch packages start at $425. All three include transportation, full setup and breakdown, insurance, and service staff. Camper packages also include lounge furniture. Dessert and espresso service are built on top of the base package — Shauna will help you customize. A $300 deposit secures your date.",
   },
   {
     q: "How far in advance do I need to book?",
@@ -69,8 +69,8 @@ const faqs = [
     a: "The camper needs at least 15′ × 20′ of horizontal clearance and 11′ of vertical clearance. For power, we prefer a 20-amp circuit (shore power) — it saves generator fuel costs. If that's not available, we can bring our generator.",
   },
   {
-    q: "Do you serve both the camper and a cart option?",
-    a: "Yes. The Blue Bird camper (Happier Camper HC1) is our signature setup — it includes lounge furniture and becomes a centerpiece. The Perch cart is a compact alternative for indoor venues or tighter spaces. Both deliver the same handcrafted quality.",
+    q: "Do you offer cart options besides the camper?",
+    a: "Yes. The Blue Bird camper (Happier Camper HC1) is our signature setup — it includes lounge furniture and becomes a centerpiece. The Perch cart is a compact alternative for indoor venues or tighter spaces. Lil Perch is even more compact, but just as elegant — made for a cannoli bar, cold brew bar, or dessert table. All three deliver the same handcrafted quality.",
   },
 ];
 
