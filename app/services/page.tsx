@@ -5,12 +5,12 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar · Boston, MA",
   description:
-    "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Blue Bird offers camper and cart packages with handcrafted drinks and custom desserts. Camper packages from $650, cart packages from $550.",
+    "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Blue Bird offers camper and cart packages with handcrafted drinks and custom desserts. Camper packages from $650, cart packages from $425.",
   alternates: { canonical: "https://bbdbar.com/services" },
   openGraph: {
     title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar",
     description:
-      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $650, cart packages from $550.",
+      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $650, cart packages from $425.",
     url: "https://bbdbar.com/services",
     siteName: "Blue Bird Mobile Dessert Bar",
     locale: "en_US",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Coffee Cart & Espresso Bar Packages | Blue Bird Mobile Dessert Bar",
     description:
-      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $650, cart packages from $550.",
+      "Rent a mobile coffee cart or espresso bar for your Boston-area wedding or event. Camper packages from $650, cart packages from $425.",
   },
 };
 
